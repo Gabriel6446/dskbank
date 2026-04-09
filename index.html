@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank UI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="top">
+      <img src="img/profile.png" class="avatar">
+      <span>Моят профил</span>
+    </div>
+
+    <div class="tabs">
+      <a href="index.html" class="tab-link active">Начало</a>
+      <a href="cards.html" class="tab-link">Карти</a>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- CARD -->
+    <a href="details.html" class="card">
+      <p class="small">РАЗПЛАЩАТЕЛНА СМЕТКА - EUR</p>
+      <h2 id="balance"></h2>
+      <span id="bgn"></span>
+    </a>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      
+    </div>
+
+   
+
+    <!-- RECENTS -->
+    <div class="section">
+      <h3>Последни операции</h3>
+      <div id="home-transactions"></div>
+    </div>
+
+    <!-- PROMO -->
+    <div class="promo">
+      <p>Любопитен ли си?</p>
+      <h2>Виж каква сума можеш да вземеш</h2>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom">
+    <div class="active">🏠</div>
+    <div onclick="goTo('cards.html')">💳</div>
+    <div>🔄</div>
+    <div>⚙️</div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

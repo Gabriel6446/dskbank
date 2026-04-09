@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карти</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="top">
+       <img src="img/profile.png" class="avatar">
+      <span>Карти</span>
+    </div>
+  </div>
+
+  <!-- CARD -->
+  <div class="card-view">
+
+    <div class="card-container" id="card">
+
+      <!-- FRONT -->
+      <div class="card-face front">
+
+        <div class="chip"></div>
+        <div class="nfc">)))</div>
+
+        <div class="card-number">
+          4748 36•• •••• 2489
+        </div>
+
+        <div class="card-name">IVAN IVANOV</div>
+
+        <div class="card-exp">12/26</div>
+
+        <div class="visa">VISA</div>
+
+      </div>
+
+      <!-- BACK -->
+      <div class="card-face back">
+
+        <div class="strip"></div>
+
+        <div class="cvv-area">
+          <span>CVV</span>
+          <div class="cvv">482</div>
+        </div>
+
+        <div class="card-number-back">
+  4748 3612 9823 2489
+</div>
+
+<div class="card-name-back">
+  IVAN IVANOV
+</div>
+
+<div class="card-exp-back">
+  VALID THRU 11/29
+</div>
+
+      </div>
+
+    </div>
+
+    <button class="show-btn" onclick="flipCard()">
+      Покажи детайли
+    </button>
+
+  </div>
+
+</div>
+
+<script>
+function flipCard() {
+  document.getElementById("card").classList.toggle("flip");
+}
+</script>
+
+</body>
+</html>
